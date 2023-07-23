@@ -8,6 +8,7 @@ public class MadeinindiaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MadeinindiaApplication.class, args);
+		
 	}
 
 }

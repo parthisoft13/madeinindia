@@ -1,13 +1,17 @@
-package com.xcellity.mii.pojo;
+package com.xcellity.mii.entity;
+import org.springframework.data.annotation.Id;
 
-public class CategoryMaster {
-	
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Table;
+
+@Table(name = "master_categories")
+@Entity
+public class CategoryEntity {
+	@Id
+	@GeneratedValue
 	private int category_id;
 	
-	private String category_name;
-	
-	private String slug;
-
 	public int getCategory_id() {
 		return category_id;
 	}
@@ -31,5 +35,13 @@ public class CategoryMaster {
 	public void setSlug(String slug) {
 		this.slug = slug;
 	}
+
+	private String category_name;
+	
+	private String slug;
+	
+	
+	
+	
 
 }
